@@ -9,7 +9,7 @@ B- bigint
 U- undefined
 */
 
-let a = null
+let a = null 
 let b = 345
 let c = true
 let d = BigInt(567)
@@ -17,7 +17,8 @@ let d = BigInt(567)
 let e = 'Harry'
 
 let f = Symbol('I am a nice and GOATed symbol')
-let g = undefined 
+let g = undefined //If we leave the g as it is, it is still considered as undefined, BUT NOT AS NULL
+let h // This is undefined
 console.log(a, b,c,d,e,f,g)
 console.log(typeof a)
 
@@ -32,4 +33,4 @@ const item = {
 	'Codenames': "Ivan"
 }
 console.log(item['ID']) 
-//Will obviously throw an error if we try to pass a key that does not exist in this object. Do not call it dictionary, (although the concept is same)
+// Will obviously throw an error if we try to pass a key that does not exist in this object. Do not call it dictionary, (although the concept is same)
