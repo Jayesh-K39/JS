@@ -1,23 +1,29 @@
 import os
 import shutil
 
-src = "/home/jk/py/push.sh"
+
+src = "/home/jk/js/chapter_1_practice_set"
 dest = "/home/jk/js"
 
 #os.rename(src, dest)
 
-shutil.copy2(src, dest)
+#shutil.copy2(src, dest)
+#os.symlink("/home/jk/C/C_practice", "cp")
 
-#shutil.move(src, dest)
+items =  [f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f))]
+for a in items:
+    src_path = os.path.join(src, a)
+    dest_path = os.path.join(dest, a)
+    shutil.move(src_path, dest_path)
 
-#os.symlink('/home/jk/py/numpy', 'np')
+
 print(" Mission Successful !")
 
+"""     IMPORTANT PATHS  :   
 
 
-"""     IMPORTANT PATHS  :
 1)
-micro ~/.bashrc
+micro ~/.bashrc 
 After doing the changes in ~/.bashrc, run this:
 
 source ~/.bashrc
@@ -27,6 +33,4 @@ source ~/.bashrc
 micro ~/.config/micro/settings.json
 
 
-
 """
-
