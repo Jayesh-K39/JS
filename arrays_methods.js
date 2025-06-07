@@ -1,3 +1,4 @@
+
 let a = [1,2,3,4,5,6]; console.log('The original array: ', a)
 let b = a.toString(); //The array has been turned to string with this one
 console.log('This is the string of the same array: ', b)
@@ -19,7 +20,7 @@ console.log(`\nThe first element of the array is: ${a.shift()} and now the array
 
 
 a.unshift(5)
-//Adds the element (that is passed as the argument) into the first index if the existing array, and displays the length
+//Adds the element (that is passed as the argument) into the first index of the existing array, and displays the length
 console.log(`\n5 is now added to the starting of the array with unshift: ${a}`) //Updates the array
 
 let popper = a.pop(); //Updates the array
