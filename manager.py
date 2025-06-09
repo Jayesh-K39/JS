@@ -2,11 +2,11 @@ import os
 import shutil
 
 
-src = "/home/jk/js/decorator.py"
-dest = "/home/jk/py"
+src = "/home/jk/js/arrays_with_loops.js"
+dest = "/home/jk/js/loops_with_objects.js"
 
-#os.rename(src, dest)
-shutil.move(src,dest)
+os.rename(src, dest)
+#shutil.move(src,dest)
 #shutil.copy2(src, dest)
 #os.symlink("/home/jk/C/C_practice", "cp")
 

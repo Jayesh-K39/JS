@@ -3,8 +3,8 @@ console.log('The squared array of num: ')
 num.forEach((element) => {
 	console.log(element * element)
 })
-
 //squared. This is called as a forEach Loop
+
 console.log('\nThe each element of array num printed with for of loop: ')
 for ( let i of num ){
 	console.log(i)
@@ -24,3 +24,4 @@ obj = {
 for (let x in obj){
 	console.log(obj[x])
 }
+//Another possible application of for loops
