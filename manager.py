@@ -2,12 +2,12 @@ import os
 import shutil
 
 
-src = "/home/jk/js/arrays_with_loops.js"
-dest = "/home/jk/js/loops_with_objects.js"
+src = "/home/jk/js/counting.py"
+dest = "/home/jk/Life"
 
-os.rename(src, dest)
+#os.rename(src, dest)
 #shutil.move(src,dest)
-#shutil.copy2(src, dest)
+shutil.copy2(src, dest)
 #os.symlink("/home/jk/C/C_practice", "cp")
 
 '''items =  [f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f))]
